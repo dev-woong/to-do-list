@@ -1,9 +1,25 @@
-import React from "react"
+import React, { useState } from "react"
+import List from "./List"
 
-const initialState = {}
+const initialList = [
+  {
+    id: 1,
+    content: "first to do list",
+    active: true,
+  },
+  {
+    id: 2,
+    content: "second to do list",
+    active: false,
+  },
+]
 
 const App = () => {
-  return <></>
+  return (
+    <>
+      <List initialList={initialList} />
+    </>
+  )
 }
 
 export default App
